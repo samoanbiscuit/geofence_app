@@ -11,7 +11,7 @@
    <application
         android:label="geofence_app"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/geofence_app_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
