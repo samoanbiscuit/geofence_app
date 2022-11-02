@@ -1,16 +1,10 @@
 # geofence_app
 
-A geofence app for USP
+A geofence app for USP 
 
-## Getting Started
+## Plugins/Resources Used
 
-This project is a starting point for a Flutter application.
+The below resources were invalauable in getting this project off the ground.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [geofence_service: a valuable flutter package that exposes geofence services for dart and flutter use](https://pub.dev/packages/geofence_service)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
