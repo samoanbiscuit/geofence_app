@@ -6,5 +6,5 @@ A geofence app for USP
 
 The below resources were invalauable in getting this project off the ground.
 
-- [geofence_service: Write your first Flutter app](https://pub.dev/packages/geofence_service)
+- [geofence_service: a valuable flutter package that exposes geofence services for dart and flutter use](https://pub.dev/packages/geofence_service)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
