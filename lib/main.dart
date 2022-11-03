@@ -32,8 +32,8 @@ class _GeoFenceAppState extends State<GeoFenceApp> {
   final _geofenceList = <Geofence>[
     Geofence(
       id: 'place_1',
-      latitude: 18.39611111,
-      longitude: 178.61888889,
+      latitude: -18.1492,
+      longitude: 178.4445,
       radius: [
         GeofenceRadius(id: 'radius_100m', length: 100),
         GeofenceRadius(id: 'radius_25m', length: 25),
@@ -43,8 +43,8 @@ class _GeoFenceAppState extends State<GeoFenceApp> {
     ),
     Geofence(
       id: 'place_2',
-      latitude: 18.40444444,
-      longitude: 178.60444444,
+      latitude: -18.1496,
+      longitude: 178.4435,
       radius: [
         GeofenceRadius(id: 'radius_25m', length: 25),
         GeofenceRadius(id: 'radius_100m', length: 100),
