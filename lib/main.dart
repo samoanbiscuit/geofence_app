@@ -24,31 +24,122 @@ class _GeoFenceAppState extends State<GeoFenceApp> {
       loiteringDelayMs: 60000,
       statusChangeDelayMs: 10000,
       useActivityRecognition: true,
-      allowMockLocations: false,
+      allowMockLocations: true,
       printDevLog: false,
       geofenceRadiusSortType: GeofenceRadiusSortType.DESC);
 
   // Create a [Geofence] list.
   final _geofenceList = <Geofence>[
     Geofence(
-      id: 'place_1',
-      latitude: -18.1492,
-      longitude: 178.4445,
+      id: 'USP_Library',
+      latitude: -18.149084,
+      longitude: 178.444460,
       radius: [
         GeofenceRadius(id: 'radius_100m', length: 100),
-        GeofenceRadius(id: 'radius_25m', length: 25),
-        GeofenceRadius(id: 'radius_250m', length: 250),
-        GeofenceRadius(id: 'radius_200m', length: 200),
       ],
     ),
     Geofence(
-      id: 'place_2',
-      latitude: -18.1496,
-      longitude: 178.4435,
+      id: 'Dining_Hall',
+      latitude: -18.149551,
+      longitude: 178.443569,
       radius: [
-        GeofenceRadius(id: 'radius_25m', length: 25),
         GeofenceRadius(id: 'radius_100m', length: 100),
-        GeofenceRadius(id: 'radius_200m', length: 200),
+      ],
+    ),
+    Geofence(
+      id: 'Book_Centre',
+      latitude: -18.150553,
+      longitude: 178.443979,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_Student_Association',
+      latitude: -18.149793,
+      longitude: 178.443947,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_Health_Centre',
+      latitude: -18.150113,
+      longitude: 178.443635,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_Westpac_Branch',
+      latitude: -18.150471,
+      longitude: 178.443455,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_SPACE_Building',
+      latitude: -18.150143,
+      longitude: 178.444556,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_SAFE_Rooms',
+      latitude: -18.150941,
+      longitude: 178.445447,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_SBM_Rooms',
+      latitude: -18.150498,
+      longitude: 178.445878,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_ICT_Centre',
+      latitude: -18.148071,
+      longitude: 178.443253,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_Science_Building',
+      latitude: -18.149400,
+      longitude: 178.446181,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_Fitness_Centre',
+      latitude: -18.149242,
+      longitude: 178.447096,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'AUSAID_Lecture_Theatre',
+      latitude: -18.148310,
+      longitude: 178.445751,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
+      ],
+    ),
+    Geofence(
+      id: 'USP_Main_Admin_Building',
+      latitude: -18.148071,
+      longitude: 178.444665,
+      radius: [
+        GeofenceRadius(id: 'radius_100m', length: 100),
       ],
     ),
   ];
