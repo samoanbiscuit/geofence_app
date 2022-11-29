@@ -226,7 +226,7 @@ class _GeoFenceAppState extends State<GeoFenceApp> {
         notificationText: 'Tap to return to the app',
         child: Scaffold(
           appBar: AppBar(
-            title: const Text('Geofence Service'),
+            title: const Text('CS427 Geofence App'),
             centerTitle: true,
           ),
           body: _buildContentView(),
@@ -248,7 +248,7 @@ class _GeoFenceAppState extends State<GeoFenceApp> {
       padding: const EdgeInsets.all(8.0),
       children: [
         _buildActivityMonitor(),
-        const SizedBox(height: 20.0),
+        const SizedBox(height: 20.0, width: double.infinity),
         _buildGeofenceMonitor(),
       ],
     );
@@ -261,13 +261,22 @@ class _GeoFenceAppState extends State<GeoFenceApp> {
         final updatedDateTime = DateTime.now();
         final content = snapshot.data?.toJson().toString() ?? '';
 
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('•\t\tActivity (updated: $updatedDateTime)'),
-            const SizedBox(height: 10.0),
-            Text(content),
-          ],
+        return Container(
+          padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8.0),
+            boxShadow: [BoxShadow(blurRadius: 5.0, color: Colors.black38, offset: Offset(0, 2))],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('•\t\tCurrent Location Activity (updated: $updatedDateTime)', style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 20.0, width: double.infinity),
+              Text(content),
+            ],
+          ),
         );
       },
     );
@@ -280,13 +289,22 @@ class _GeoFenceAppState extends State<GeoFenceApp> {
         final updatedDateTime = DateTime.now();
         final content = snapshot.data?.toJson().toString() ?? '';
 
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('•\t\tGeofence (updated: $updatedDateTime)'),
-            const SizedBox(height: 10.0),
-            Text(content),
-          ],
+        return Container(
+          padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8.0),
+            boxShadow: [BoxShadow(blurRadius: 5.0, color: Colors.black38, offset: Offset(0, 2))],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('•\t\tGeofence Detected (updated: $updatedDateTime)', style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 20.0, width: double.infinity),
+              Text(content),
+            ],
+          ),
         );
       },
     );
